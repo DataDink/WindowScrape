@@ -19,6 +19,22 @@
             HwndInterface.ClickHwnd(this.Hwnd);
         }
 
+        // <summary>
+        // Bring this window to the foreground
+        // </summary>
+        public bool Activate()
+        {
+            return HwndInterface.ActivateWindow(Hwnd);
+        }
+
+        // <summary>
+        // Minimize this window
+        // </summary>
+        public bool Minimize()
+        {
+            return HwndInterface.MinimizeWindow(Hwnd);
+        }
+
         public override bool Equals(object obj)
         {
             if (object.ReferenceEquals(null, obj))
