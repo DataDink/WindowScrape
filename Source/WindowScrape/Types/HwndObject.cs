@@ -101,6 +101,11 @@
             return new HwndObject(HwndInterface.GetHwndFromTitle(title));
         }
 
+        public static HwndObject GetWindowByClassName(string className)
+        {
+            return new HwndObject(HwndInterface.GetHwndFromClass(className));
+        }
+
         public static List<HwndObject> GetWindows()
         {
             List<HwndObject> list = new List<HwndObject>();
