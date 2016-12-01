@@ -118,6 +118,14 @@
 
         public static bool operator ==(HwndObject a, HwndObject b)
         {
+            if (object.ReferenceEquals(a, null))
+            {
+                return object.ReferenceEquals(b, null);
+            }
+            else if (object.ReferenceEquals(b, null))
+            {
+                return object.ReferenceEquals(a, null);
+            }
             return (a.Hwnd == b.Hwnd);
         }
 
