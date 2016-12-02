@@ -8,7 +8,7 @@
     using WindowScrape.Constants;
     using WindowScrape.Types;
 
-    internal static class HwndInterface
+    public static class HwndInterface
     {
         public static bool ActivateWindow(IntPtr hwnd)
         {
